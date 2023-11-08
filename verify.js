@@ -1,7 +1,7 @@
 const express = require("express");
-const route = express.Router();
-const verifyJWT = require("../middleware/verifyJWT");
+const router = express.Router();
+const verify = require("../../controllers/verify");
 
-route.get("/", verifyJWT);
+router.post("/", verify);
 
-module.exports = route;
+module.exports = router;
