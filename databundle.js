@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const datebundle = require("../controllers/databundle");
+const datebundle = require("databundle");
 
 router.post("/airtime", datebundle.airtimeForAllNewtwork);
 
