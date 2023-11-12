@@ -1,8 +1,8 @@
 const axios = require("axios");
-const User = require("../model/Users");
-const fund = require("../model/found");
+const User = require("./Users");
+const fund = require("./found");
 const savenewFund = require('./fund');
-const found = require("../model/found");
+const found = require("./found");
 const { format, parseISO } = require('date-fns')
 
 
