@@ -1,5 +1,5 @@
 
-const Employee = require('Employees')
+const Employee = require('./Employees')
 
 
 const getAllEmployees = async (req, res) => {
