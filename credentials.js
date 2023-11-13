@@ -1,5 +1,5 @@
 
-const allowedOrigins = require('../config/corsOptions');
+const allowedOrigins = require('corsOptions');
 
 const credentials = (req, res, next) => {
     const origin = req.headers.origin;
