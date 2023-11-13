@@ -1,12 +1,12 @@
 
-const Card_pin = require('../model/cards')
-const User = require("../model/Users");
+const Card_pin = require('cards.js')
+const User = require("Users.js");
 const jwt = require("jsonwebtoken");
-const handletransaction = require('./transaction')
+const handletransaction = require('transaction.js')
 const axios = require("axios");
 const { format, parseISO } = require('date-fns')
 const nodemailer = require('nodemailer');
-const sendmessage =require('./sendmessage')
+const sendmessage =require('sendmessage.js')
 async function refrenceId() {
   try {
     const response = await axios.get('http://worldtimeapi.org/api/timezone/Africa/Lagos');
